@@ -151,7 +151,7 @@ function svg(t) {
 `;
 }
 
-const dir = path.join(__dirname, 'assets');
+const dir = path.join(__dirname, '..', 'assets');
 fs.mkdirSync(dir, { recursive: true });
 Object.values(TEMAS).forEach((t) => {
   const arquivo = path.join(dir, `header-${t.nome}.svg`);
