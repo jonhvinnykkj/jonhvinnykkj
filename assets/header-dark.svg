@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="vinnycius — sistemas internos para o agronegócio">
+  <title>vinnycius — sistemas internos para o agronegócio</title>
+
+  <defs>
+    <linearGradient id="ceu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#101C17"/>
+      <stop offset="100%" stop-color="#0A1210"/>
+    </linearGradient>
+
+    <!-- lavoura some perto do horizonte: dá a profundidade -->
+    <linearGradient id="profundidade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="42%" stop-color="#fff" stop-opacity="0.28"/>
+      <stop offset="80%" stop-color="#fff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="1"/>
+    </linearGradient>
+    <mask id="mascaraCampo">
+      <rect x="0" y="210" width="1200" height="110" fill="url(#profundidade)"/>
+    </mask>
+
+    <!-- brilho do horizonte, mais forte sobre o ponto de fuga -->
+    <radialGradient id="brilho" cx="68.33333333333333%" cy="100%" r="44%">
+      <stop offset="0%" stop-color="#2E6B4F" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#2E6B4F" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- fio do horizonte: some nas bordas -->
+    <linearGradient id="fio" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="0">
+      <stop offset="0%" stop-color="#8FD694" stop-opacity="0"/>
+      <stop offset="16%" stop-color="#8FD694" stop-opacity="0.9"/>
+      <stop offset="84%" stop-color="#8FD694" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#8FD694" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="vinheta" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0A1210" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0A1210" stop-opacity="0.55"/>
+    </linearGradient>
+
+    <!-- varredura de luz sobre a lavoura -->
+    <linearGradient id="luz" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8FD694" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#8FD694" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#8FD694" stop-opacity="0"/>
+    </linearGradient>
+
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+      .sans { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+      .varredura { animation: passa 19s linear infinite; }
+      @keyframes passa {
+        from { transform: translateX(-620px); }
+        to   { transform: translateX(1420px); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .varredura { animation: none; opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#ceu)"/>
+  <rect x="0" y="90" width="1200" height="230" fill="url(#brilho)"/>
+
+  <!-- === LAVOURA === -->
+  <g mask="url(#mascaraCampo)">
+    <g>
+      <line x1="-1000" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.48" opacity="0.66"/>
+      <line x1="-932" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.44" opacity="0.64"/>
+      <line x1="-864" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.40" opacity="0.62"/>
+      <line x1="-796" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.37" opacity="0.60"/>
+      <line x1="-728" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.33" opacity="0.58"/>
+      <line x1="-660" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.29" opacity="0.56"/>
+      <line x1="-592" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.26" opacity="0.54"/>
+      <line x1="-524" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.22" opacity="0.52"/>
+      <line x1="-456" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.18" opacity="0.50"/>
+      <line x1="-388" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.15" opacity="0.49"/>
+      <line x1="-320" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.11" opacity="0.47"/>
+      <line x1="-252" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.07" opacity="0.45"/>
+      <line x1="-184" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.04" opacity="0.43"/>
+      <line x1="-116" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.00" opacity="0.41"/>
+      <line x1="-48" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.96" opacity="0.39"/>
+      <line x1="20" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.93" opacity="0.37"/>
+      <line x1="88" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.89" opacity="0.35"/>
+      <line x1="156" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.86" opacity="0.33"/>
+      <line x1="224" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.82" opacity="0.31"/>
+      <line x1="292" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.78" opacity="0.29"/>
+      <line x1="360" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.75" opacity="0.27"/>
+      <line x1="428" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.71" opacity="0.25"/>
+      <line x1="496" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.67" opacity="0.23"/>
+      <line x1="564" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.64" opacity="0.21"/>
+      <line x1="632" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.60" opacity="0.19"/>
+      <line x1="700" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.56" opacity="0.17"/>
+      <line x1="768" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.53" opacity="0.15"/>
+      <line x1="836" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.51" opacity="0.14"/>
+      <line x1="904" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.55" opacity="0.16"/>
+      <line x1="972" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.58" opacity="0.18"/>
+      <line x1="1040" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.62" opacity="0.20"/>
+      <line x1="1108" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.65" opacity="0.22"/>
+      <line x1="1176" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.69" opacity="0.24"/>
+      <line x1="1244" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.73" opacity="0.26"/>
+      <line x1="1312" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.76" opacity="0.28"/>
+      <line x1="1380" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.80" opacity="0.30"/>
+      <line x1="1448" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.84" opacity="0.32"/>
+      <line x1="1516" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.87" opacity="0.34"/>
+      <line x1="1584" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.91" opacity="0.36"/>
+      <line x1="1652" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.95" opacity="0.38"/>
+      <line x1="1720" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="0.98" opacity="0.40"/>
+      <line x1="1788" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.02" opacity="0.42"/>
+      <line x1="1856" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.05" opacity="0.44"/>
+      <line x1="1924" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.09" opacity="0.46"/>
+      <line x1="1992" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.13" opacity="0.47"/>
+      <line x1="2060" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.16" opacity="0.49"/>
+      <line x1="2128" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.20" opacity="0.51"/>
+      <line x1="2196" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.24" opacity="0.53"/>
+      <line x1="2264" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.27" opacity="0.55"/>
+      <line x1="2332" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.31" opacity="0.57"/>
+      <line x1="2400" y1="330" x2="820" y2="210" stroke="#3FA06A" stroke-width="1.35" opacity="0.59"/>
+    </g>
+    <g class="varredura">
+      <rect x="0" y="210" width="620" height="110" fill="url(#luz)"/>
+    </g>
+  </g>
+
+  <!-- === HORIZONTE === bloom largo embaixo, fio nítido em cima -->
+  <line x1="0" y1="210" x2="1200" y2="210" stroke="url(#fio)" stroke-width="7" opacity="0.22"/>
+  <line x1="0" y1="210" x2="1200" y2="210" stroke="url(#fio)" stroke-width="1.2"/>
+
+  <rect x="0" y="286" width="1200" height="34" fill="url(#vinheta)"/>
+
+  <!-- === IDENTIFICAÇÃO === -->
+  <text class="mono" x="72" y="72" fill="#7C8F84" font-size="12.5" letter-spacing="4.2">SISTEMAS INTERNOS · AGRONEGÓCIO</text>
+
+  <text class="mono" x="70" y="140" fill="#E9E4D6" font-size="62" font-weight="700" letter-spacing="-1.5">vinnycius</text>
+
+  <text class="sans" x="72" y="174" fill="#7C8F84" font-size="16.5">Do controle de balança na fazenda ao dashboard que a diretoria abre de manhã.</text>
+
+  <!-- === LEITURA === alinhada à direita, como painel de instrumento -->
+  <g class="mono" text-anchor="end">
+    <text x="1128" y="66" fill="#7C8F84" font-size="11" letter-spacing="2.6">EM PRODUÇÃO</text>
+    <text x="1128" y="104" fill="#E3B04B" font-size="34" font-weight="700" letter-spacing="-0.5">08</text>
+    <text x="1128" y="134" fill="#7C8F84" font-size="11" letter-spacing="2.6">STACK</text>
+    <text x="1128" y="164" fill="#E9E4D6" font-size="17" font-weight="600">TypeScript · Python</text>
+  </g>
+</svg>
