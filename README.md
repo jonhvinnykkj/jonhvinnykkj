@@ -80,6 +80,11 @@ O que trouxe de Bragança, e o que hoje sustenta o resto:
 | **Análise em R** | `read.csv` → `factor` → EDA → histograma, boxplot, matriz de correlação → inferência. O ciclo inteiro em script versionado, não em planilha |
 | **Processos** | Modelagem de processo de negócio: onde o dado é gerado, quem toca nele e onde ele se perde |
 
+📊 **[ipb-ciencia-de-dados](https://github.com/jonhvinnykkj/ipb-ciencia-de-dados)** — o trabalho da
+disciplina, aberto: dez questões de inferência em R (`t` de uma amostra, Kolmogorov-Smirnov,
+qui-quadrado, proporção, ANOVA com Tukey e `t` de Welch), cada teste precedido da verificação do
+pressuposto que o sustenta. Scripts, dados e as onze figuras regeneráveis.
+
 ---
 
 ## 🛠️ Ferramentas
@@ -117,6 +122,7 @@ O que dá pra abrir:
 
 - **[game-alert](https://github.com/jonhvinnykkj/game-alert)** — bot de Telegram que monitora promoções de jogos em PlayStation e Xbox. Crawlers em Python.
 - **[market-pi](https://github.com/jonhvinnykkj/market-pi)** — marketplace em Vite + React com API própria e PostgreSQL.
+- **[ipb-ciencia-de-dados](https://github.com/jonhvinnykkj/ipb-ciencia-de-dados)** — inferência estatística em R, do intercâmbio em Bragança.
 - **[fatec-*](https://github.com/jonhvinnykkj?tab=repositories&q=fatec)** — exercícios das disciplinas: Java, Python, banco de dados, estatística.
 
 ---
