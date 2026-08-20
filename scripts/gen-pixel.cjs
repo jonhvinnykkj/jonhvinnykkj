@@ -172,7 +172,152 @@ function svgGrade(tema, cor) {
   return `${w}x${h}${cal ? ` (${cal.total} contribuicoes)` : ' (sintetico)'}`;
 }
 
+// ---------------------------------------------------------------------------
+// Faixa de talhoes: uma vista aerea de lavoura, cada retangulo e um talhao com
+// seu proprio vigor. Mesma gramatica de celula da grade de contribuicoes.
+// ---------------------------------------------------------------------------
+function svgTalhoes(tema, cor) {
+  const CELULA = 7, PASSO = 9, MARGEM = 5, COLS = 86, BANDAS = 3, ALTURA_BANDA = 2;
+  // entre as bandas fica uma linha vazia: o carreador que separa os talhoes
+  const rows = BANDAS * ALTURA_BANDA + (BANDAS - 1);
+  const w = MARGEM * 2 + COLS * PASSO - (PASSO - CELULA);
+  const h = MARGEM * 2 + rows * PASSO - (PASSO - CELULA);
+
+  const nivel = Array.from({ length: rows }, () => Array(COLS).fill(-1));
+  for (let b = 0; b < BANDAS; b++) {
+    const topo = b * (ALTURA_BANDA + 1);
+    let x = 0, i = 0;
+    while (x < COLS) {
+      const larg = 5 + Math.floor(hash(b, i, 31) * 9);
+      const r = hash(b, i, 47);
+      // vigor do talhao: a maioria em meio-termo, um em cinco em pousio
+      let base;
+      if (r < 0.2) base = -1;
+      else if (r < 0.45) base = 0;
+      else if (r < 0.75) base = 1;
+      else if (r < 0.93) base = 2;
+      else base = 3;
+      // a ultima coluna do talhao fica vazia: e a divisa entre um e outro
+      for (let dx = 0; dx < larg - 1 && x + dx < COLS; dx++) {
+        for (let dy = 0; dy < ALTURA_BANDA; dy++) {
+          let n = base;
+          if (n > 0 && hash(x + dx, topo + dy, 71) > 0.82) n -= 1;
+          nivel[topo + dy][x + dx] = n;
+        }
+      }
+      x += larg;
+      i++;
+    }
+  }
+
+  const out = [
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-label="Talhoes de lavoura em pixel art">`,
+  ];
+  for (let y = 0; y < rows; y++) {
+    for (let x = 0; x < COLS; x++) {
+      const n = nivel[y][x];
+      const fill = n < 0 ? cor.vazio : cor.escala[n];
+      out.push(`<rect x="${MARGEM + x * PASSO}" y="${MARGEM + y * PASSO}" width="${CELULA}" height="${CELULA}" rx="2" fill="${fill}"/>`);
+    }
+  }
+  out.push('</svg>');
+  fs.writeFileSync(path.join(OUT, `talhoes-${tema}.svg`), out.join('\n') + '\n');
+  return `${w}x${h}`;
+}
+
+// ---------------------------------------------------------------------------
+// Rota do intercambio: Pompeia (SP) -> Braganca (PT), com os dois continentes
+// em pixel e o arco pontilhado entre eles.
+// ---------------------------------------------------------------------------
+// silhuetas amostradas do contorno real: Brasil num quadro de 16x17 celulas
+// (lon -74..-34, lat +5..-34) e a Peninsula Iberica em 14x9 (lon -9.5..+3.3,
+// lat 43.8..36.0). Cada celula vale cerca de 2.7 graus no Brasil e 0.9 na Iberia.
+const BRASIL = [
+  '....######......',
+  '..#########.....',
+  '############....',
+  '###############.',
+  '################',
+  '################',
+  '.##############.',
+  '...###########..',
+  '.....#########..',
+  '......########..',
+  '......#######...',
+  '......######....',
+  '.......####.....',
+  '.......###......',
+  '......####......',
+  '......###.......',
+  '.......##.......',
+];
+const IBERIA = [
+  '##########....',
+  '##############',
+  '##############',
+  '##############',
+  '##############',
+  '###########...',
+  '##########....',
+  '#########.....',
+  '..######......',
+];
+
+function svgRota(tema, cor) {
+  const CELULA = 7, PASSO = 9, MARGEM = 5, COLS = 74, ROWS = 21;
+  const w = MARGEM * 2 + COLS * PASSO - (PASSO - CELULA);
+  const h = MARGEM * 2 + ROWS * PASSO - (PASSO - CELULA);
+  const celulas = new Map();
+  const por = (x, y, fill) => {
+    if (x < 0 || y < 0 || x >= COLS || y >= ROWS) return;
+    celulas.set(`${x},${y}`, fill);
+  };
+
+  // Brasil a esquerda, com Pompeia acesa no sudeste
+  const BX = 2, BY = 2, POMPEIA = [9, 11];  // Pompeia (SP): -22.1, -50.5
+  BRASIL.forEach((linha, y) => linha.split('').forEach((c, x) => {
+    if (c === '#') por(BX + x, BY + y, cor.escala[1]);
+  }));
+  por(BX + POMPEIA[0], BY + POMPEIA[1], cor.escala[3]);
+
+  // Iberia a direita: Portugal (faixa oeste) aceso, Espanha apagada
+  const IX = 57, IY = 7, BRAGANCA = [3, 2];  // Braganca (PT): 41.8, -6.8
+  IBERIA.forEach((linha, y) => linha.split('').forEach((c, x) => {
+    if (c !== '#') return;
+    // Portugal e a faixa oeste (lon < -6.2); a Espanha fica apagada atras
+    const portugal = x <= 3 && y >= 1 && y <= 7;
+    por(IX + x, IY + y, portugal ? cor.escala[1] : cor.escala[0]);
+  }));
+  por(IX + BRAGANCA[0], IY + BRAGANCA[1], cor.escala[3]);
+
+  // arco pontilhado ligando os dois pontos
+  const x0 = BX + POMPEIA[0], y0 = BY + POMPEIA[1];
+  const x1 = IX + BRAGANCA[0], y1 = IY + BRAGANCA[1];
+  for (let k = 1; k <= 13; k++) {
+    const t = k / 14;
+    const x = Math.round(x0 + (x1 - x0) * t);
+    const y = Math.round(y0 + (y1 - y0) * t - 5.5 * Math.sin(Math.PI * t));
+    if (!celulas.has(`${x},${y}`)) por(x, y, cor.escala[2]);
+  }
+
+  const out = [
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-label="Rota do intercambio: Pompeia, Brasil para Braganca, Portugal">`,
+    `<title>Pompeia (SP) para Braganca (PT)</title>`,
+  ];
+  for (let y = 0; y < ROWS; y++) {
+    for (let x = 0; x < COLS; x++) {
+      const fill = celulas.get(`${x},${y}`) || cor.vazio;
+      out.push(`<rect x="${MARGEM + x * PASSO}" y="${MARGEM + y * PASSO}" width="${CELULA}" height="${CELULA}" rx="2" fill="${fill}"/>`);
+    }
+  }
+  out.push('</svg>');
+  fs.writeFileSync(path.join(OUT, `rota-${tema}.svg`), out.join('\n') + '\n');
+  return `${w}x${h}`;
+}
+
 for (const [tema, cor] of Object.entries(TEMAS)) {
   console.log(`name-pixel-${tema}.svg  ${svgNome(tema, cor)}`);
   console.log(`contrib-grid-${tema}.svg ${svgGrade(tema, cor)}`);
+  console.log(`talhoes-${tema}.svg      ${svgTalhoes(tema, cor)}`);
+  console.log(`rota-${tema}.svg         ${svgRota(tema, cor)}`);
 }
