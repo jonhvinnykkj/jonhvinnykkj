@@ -150,8 +150,11 @@ O que dá pra abrir:
 
 <div align="center">
 
-<a href="mailto:midia@grupoprogresso.agr.br">
+<a href="mailto:jonhv.dev@gmail.com">
   <img src="https://img.shields.io/badge/E--mail-EA4335?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="E-mail" />
+</a>
+<a href="https://www.linkedin.com/in/jo%C3%A3o-vinnycius-matos-monteiro-ferreira-83b452286/" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn" />
 </a>
 <a href="https://github.com/jonhvinnykkj" target="_blank">
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub" />
@@ -159,7 +162,7 @@ O que dá pra abrir:
 
 <br/><br/>
 
-📧 [midia@grupoprogresso.agr.br](mailto:midia@grupoprogresso.agr.br) &nbsp;·&nbsp; 📍 Pompeia — SP
+📧 [jonhv.dev@gmail.com](mailto:jonhv.dev@gmail.com) &nbsp;·&nbsp; 💼 [LinkedIn](https://www.linkedin.com/in/jo%C3%A3o-vinnycius-matos-monteiro-ferreira-83b452286/) &nbsp;·&nbsp; 📍 Pompeia — SP
 
 </div>
 
