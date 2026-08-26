@@ -1,0 +1,40 @@
+# Gera a animacao da cobrinha comendo a grade de contribuicoes.
+name: Cobrinha das contribuicoes
+
+on:
+  schedule:
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cobrinha
+  cancel-in-progress: true
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      # a paleta acompanha os verdes do resto do perfil, nao o padrao da acao
+      - name: Desenhar
+        uses: Platane/snk@v3.4.0
+        id: snake
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/cobrinha-dark.svg?color_snake=#39d353&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
+            assets/cobrinha-light.svg?color_snake=#216e39&color_dots=#ebedf0,#9be9a8,#40c463,#30a14e,#216e39
+
+      - name: Comitar se mudou
+        run: |
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add assets/cobrinha-dark.svg assets/cobrinha-light.svg
+          git diff --staged --quiet && echo 'nada mudou' && exit 0
+          git commit -m 'chore: atualiza a cobrinha [skip ci]'
+          git push
