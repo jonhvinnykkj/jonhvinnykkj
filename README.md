@@ -11,13 +11,6 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=jonhvinnykkj&amp;hide_border=true&amp;locale=pt_BR&amp;card_width=1180&amp;background=0d1117&amp;stroke=1f6f37&amp;ring=39d353&amp;fire=39d353&amp;currStreakLabel=39d353&amp;sideLabels=8b949e&amp;currStreakNum=e6edf3&amp;sideNums=e6edf3&amp;dates=6e7681&amp;titleColor=39d353" />
-  <img width="100%" src="https://streak-stats.demolab.com/?user=jonhvinnykkj&amp;hide_border=true&amp;locale=pt_BR&amp;card_width=1180&amp;background=ffffff&amp;stroke=d3e6d8&amp;ring=216e39&amp;fire=216e39&amp;currStreakLabel=216e39&amp;sideLabels=57606a&amp;currStreakNum=1f2328&amp;sideNums=1f2328&amp;dates=8b949e&amp;titleColor=216e39" alt="Sequência de contribuições" />
-</picture>
-
-<br/>
-
-<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-salesp07.vercel.app/api?username=jonhvinnykkj&amp;show_icons=true&amp;count_private=true&amp;include_all_commits=true&amp;hide_rank=true&amp;card_width=500&amp;hide_border=true&amp;locale=pt-br&amp;disable_animations=true&amp;cache_seconds=1800&amp;bg_color=0d1117&amp;title_color=39d353&amp;icon_color=26a641&amp;text_color=c9d1d9" />
   <img width="49%" src="https://github-readme-stats-salesp07.vercel.app/api?username=jonhvinnykkj&amp;show_icons=true&amp;count_private=true&amp;include_all_commits=true&amp;hide_rank=true&amp;card_width=500&amp;hide_border=true&amp;locale=pt-br&amp;disable_animations=true&amp;cache_seconds=1800&amp;bg_color=ffffff&amp;title_color=216e39&amp;icon_color=30a14e&amp;text_color=24292f" alt="Estatísticas do GitHub" />
 </picture>
