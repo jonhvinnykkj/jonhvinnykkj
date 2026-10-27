@@ -6,6 +6,24 @@
   <img src="assets/heroi-dark.svg" alt="João Vinnycius Ferreira — Big Data no Agronegócio, iniciação científica FAPESP em LLM sobre dado agrícola, intercâmbio no IPB Bragança" width="100%" />
 </picture>
 
+<!-- ===== DESTAQUE — gerado por scripts/gen-destaque.cjs ===== -->
+
+<br/>
+
+<a href="https://github.com/jonhvinnykkj/fogo-dsin-coder-challenge-2026">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/destaque-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/destaque-light.svg" />
+  <img src="assets/destaque-dark.svg" alt="Projeto em destaque: F.O.G.O. – Ferramenta Onisciente de Gestão e Operações. Inventário de equipamentos IoT, central de operações com mapa ao vivo e previsões para o trânsito de Marília/SP (DSIN Coder Challenge 2026)" width="100%" />
+</picture>
+</a>
+
+<div align="center">
+
+<a href="https://github.com/jonhvinnykkj/fogo-dsin-coder-challenge-2026"><img src="https://img.shields.io/badge/C%C3%B3digo-0d1117?style=for-the-badge&amp;logo=github&amp;logoColor=39d353&amp;labelColor=0d1117" alt="Código do F.O.G.O." /></a>&nbsp;&nbsp;<a href="https://github.com/jonhvinnykkj/fogo-dsin-coder-challenge-2026/releases/download/v1.0/fogo-demonstracao.mp4"><img src="https://img.shields.io/badge/V%C3%ADdeo%203%3A52-0d1117?style=for-the-badge&amp;logo=airplayvideo&amp;logoColor=39d353&amp;labelColor=0d1117" alt="Vídeo de demonstração (3:52)" /></a>&nbsp;&nbsp;<a href="https://github.com/jonhvinnykkj/fogo-dsin-coder-challenge-2026/blob/main/docs/Relatorio-Tecnico-FOGO.pdf"><img src="https://img.shields.io/badge/Relat%C3%B3rio%20ABNT-0d1117?style=for-the-badge&amp;logo=adobeacrobatreader&amp;logoColor=39d353&amp;labelColor=0d1117" alt="Relatório técnico (PDF)" /></a>
+
+</div>
+
 <!-- ===== NÚMEROS ===== -->
 
 <div align="center">

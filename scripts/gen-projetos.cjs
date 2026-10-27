@@ -89,13 +89,15 @@ async function coletar() {
     !/vazio|hist[oó]rico|apenas o enunciado/i.test(r.description || '') &&
     (r.description || '').length > 0);
 
-  // Repo vivo na frente do arquivado. Dentro de cada grupo, ordena por tamanho
-  // e nao por data: ordenar por data enchia o painel com exercicio de Java de
-  // uma aula so porque foram os ultimos commits. Tamanho aproxima melhor
-  // quanto codigo de verdade o repo tem.
-  const escolhidos = vale
-    .sort((a, b) => (a.archived - b.archived) || (b.size - a.size))
-    .slice(0, QUANTOS);
+  // So repo vivo. Arquivado so completa o painel: ate ter 4 cartoes, ou para a
+  // ultima linha nao ficar com um cartao sozinho. Dentro de cada grupo, ordena
+  // por tamanho e nao por data: ordenar por data enchia o painel com exercicio
+  // de Java de uma aula so porque foram os ultimos commits. Tamanho aproxima
+  // melhor quanto codigo de verdade o repo tem.
+  const porTamanho = (a, b) => b.size - a.size;
+  const vivos = vale.filter((r) => !r.archived).sort(porTamanho).slice(0, QUANTOS);
+  const falta = Math.max(4 - vivos.length, vivos.length % 2);
+  const escolhidos = vivos.concat(vale.filter((r) => r.archived).sort(porTamanho).slice(0, falta));
   for (const r of escolhidos) {
     try {
       const langs = await api(`/repos/${DONO}/${r.name}/languages`);
