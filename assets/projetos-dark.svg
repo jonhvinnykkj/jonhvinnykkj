@@ -7,6 +7,35 @@
 <path d="M0 10a10 10 0 0 1 10-10h558a10 10 0 0 1 10 10v16H0z" fill="#131c26"/>
 <line x1="0" y1="26" x2="578" y2="26" stroke="#21372a"/>
 <circle cx="14" cy="13.5" r="2.5" fill="#39d353"/>
+<text x="24" y="17.5" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#6e7681">jonhvinnykkj/caderno-de-campo-mongodb</text>
+<circle cx="564" cy="13.5" r="3" fill="#39d353" fill-opacity="0.55"/>
+<rect x="14" y="38" width="40" height="40" rx="9" fill="#f1e05a" fill-opacity="0.16" stroke="#f1e05a" stroke-opacity="0.45"/>
+<text x="34" y="65" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="20" font-weight="700" fill="#f1e05a" text-anchor="middle">C</text>
+<text x="66" y="53" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="15" font-weight="700" fill="#e6edf3">caderno-de-campo-mongodb<tspan fill="#39d353">_</tspan></text>
+<text x="66" y="72" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#8b949e">Caderno de Campo: CRUD em Node.js + MongoDB</text>
+<text x="66" y="86" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#8b949e">(IAL-215 Banco de Dados NoSQL, Fatec Pompeia)</text>
+<rect x="66" y="98" width="77.0" height="17" rx="8.5" fill="#16281d" stroke="#245c34"/>
+<text x="104.5" y="110" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="9" fill="#7ee295" text-anchor="middle">JavaScript</text>
+<rect x="149" y="98" width="34.3" height="17" rx="8.5" fill="#16281d" stroke="#245c34"/>
+<text x="166.15" y="110" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="9" fill="#7ee295" text-anchor="middle">CSS</text>
+<rect x="189.3" y="98" width="34.3" height="17" rx="8.5" fill="#16281d" stroke="#245c34"/>
+<text x="206.45000000000002" y="110" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="9" fill="#7ee295" text-anchor="middle">EJS</text>
+<text x="66" y="126" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="9.5" fill="#6e7681">★ 0  ·  atualizado hoje</text>
+<circle cx="402" cy="44.5" r="3.5" fill="#f1e05a"/>
+<text x="412" y="48" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="9.5" fill="#8b949e">JavaScript 52%</text>
+<circle cx="402" cy="59.5" r="3.5" fill="#563d7c"/>
+<text x="412" y="63" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="9.5" fill="#8b949e">CSS 25%</text>
+<circle cx="402" cy="74.5" r="3.5" fill="#8b949e"/>
+<text x="412" y="78" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="9.5" fill="#8b949e">EJS 17%</text>
+<circle cx="532" cy="66" r="22" fill="none" stroke="#1c2b22" stroke-width="6"/>
+<circle cx="532" cy="66" r="22" fill="none" stroke="#f1e05a" stroke-width="6" stroke-linecap="round" stroke-dasharray="71.9 138.2" transform="rotate(-90 532 66)"/>
+<text x="532" y="70" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="700" fill="#e6edf3" text-anchor="middle">52%</text>
+</g>
+<g transform="translate(604, 40)">
+<rect width="578" height="132" rx="10" fill="#0f1620" stroke="#21372a"/>
+<path d="M0 10a10 10 0 0 1 10-10h558a10 10 0 0 1 10 10v16H0z" fill="#131c26"/>
+<line x1="0" y1="26" x2="578" y2="26" stroke="#21372a"/>
+<circle cx="14" cy="13.5" r="2.5" fill="#39d353"/>
 <text x="24" y="17.5" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#6e7681">jonhvinnykkj/ipb-ciencia-de-dados</text>
 <circle cx="564" cy="13.5" r="3" fill="#39d353" fill-opacity="0.55"/>
 <rect x="14" y="38" width="40" height="40" rx="9" fill="#198CE7" fill-opacity="0.16" stroke="#198CE7" stroke-opacity="0.45"/>
@@ -23,7 +52,7 @@
 <circle cx="532" cy="66" r="22" fill="none" stroke="#198CE7" stroke-width="6" stroke-linecap="round" stroke-dasharray="138.2 138.2" transform="rotate(-90 532 66)"/>
 <text x="532" y="70" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="700" fill="#e6edf3" text-anchor="middle">100%</text>
 </g>
-<g transform="translate(604, 40)">
+<g transform="translate(2, 196)">
 <rect width="578" height="132" rx="10" fill="#0f1620" stroke="#21372a"/>
 <path d="M0 10a10 10 0 0 1 10-10h558a10 10 0 0 1 10 10v16H0z" fill="#131c26"/>
 <line x1="0" y1="26" x2="578" y2="26" stroke="#21372a"/>
@@ -44,7 +73,7 @@
 <circle cx="532" cy="66" r="22" fill="none" stroke="#3572A5" stroke-width="6" stroke-linecap="round" stroke-dasharray="138.2 138.2" transform="rotate(-90 532 66)"/>
 <text x="532" y="70" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="700" fill="#e6edf3" text-anchor="middle">100%</text>
 </g>
-<g transform="translate(2, 196)">
+<g transform="translate(604, 196)">
 <rect width="578" height="132" rx="10" fill="#0f1620" stroke="#21372a"/>
 <path d="M0 10a10 10 0 0 1 10-10h558a10 10 0 0 1 10 10v16H0z" fill="#131c26"/>
 <line x1="0" y1="26" x2="578" y2="26" stroke="#21372a"/>
@@ -73,7 +102,7 @@
 <circle cx="532" cy="66" r="22" fill="none" stroke="#e34c26" stroke-width="6" stroke-linecap="round" stroke-dasharray="85.7 138.2" transform="rotate(-90 532 66)"/>
 <text x="532" y="70" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="700" fill="#e6edf3" text-anchor="middle">62%</text>
 </g>
-<g transform="translate(604, 196)">
+<g transform="translate(2, 352)">
 <rect width="578" height="132" rx="10" fill="#0f1620" stroke="#21372a"/>
 <path d="M0 10a10 10 0 0 1 10-10h558a10 10 0 0 1 10 10v16H0z" fill="#131c26"/>
 <line x1="0" y1="26" x2="578" y2="26" stroke="#21372a"/>
@@ -102,7 +131,7 @@
 <circle cx="532" cy="66" r="22" fill="none" stroke="#3178c6" stroke-width="6" stroke-linecap="round" stroke-dasharray="127.2 138.2" transform="rotate(-90 532 66)"/>
 <text x="532" y="70" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="700" fill="#e6edf3" text-anchor="middle">92%</text>
 </g>
-<g transform="translate(2, 352)">
+<g transform="translate(604, 352)">
 <rect width="578" height="132" rx="10" fill="#0f1620" stroke="#21372a"/>
 <path d="M0 10a10 10 0 0 1 10-10h558a10 10 0 0 1 10 10v16H0z" fill="#131c26"/>
 <line x1="0" y1="26" x2="578" y2="26" stroke="#21372a"/>
@@ -126,26 +155,5 @@
 <circle cx="532" cy="66" r="22" fill="none" stroke="#1c2b22" stroke-width="6"/>
 <circle cx="532" cy="66" r="22" fill="none" stroke="#3572A5" stroke-width="6" stroke-linecap="round" stroke-dasharray="94.0 138.2" transform="rotate(-90 532 66)"/>
 <text x="532" y="70" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="700" fill="#e6edf3" text-anchor="middle">68%</text>
-</g>
-<g transform="translate(604, 352)">
-<rect width="578" height="132" rx="10" fill="#0f1620" stroke="#21372a"/>
-<path d="M0 10a10 10 0 0 1 10-10h558a10 10 0 0 1 10 10v16H0z" fill="#131c26"/>
-<line x1="0" y1="26" x2="578" y2="26" stroke="#21372a"/>
-<circle cx="14" cy="13.5" r="2.5" fill="#39d353"/>
-<text x="24" y="17.5" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#6e7681">jonhvinnykkj/fatec-elevador-system</text>
-<text x="564" y="17.5" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="9" fill="#6e7681" text-anchor="end">arquivado</text>
-<rect x="14" y="38" width="40" height="40" rx="9" fill="#b07219" fill-opacity="0.16" stroke="#b07219" stroke-opacity="0.45"/>
-<text x="34" y="65" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="20" font-weight="700" fill="#b07219" text-anchor="middle">F</text>
-<text x="66" y="53" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="15" font-weight="700" fill="#e6edf3">fatec-elevador-system<tspan fill="#39d353">_</tspan></text>
-<text x="66" y="72" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#8b949e">Exercício acadêmico: simulação de sistema de</text>
-<text x="66" y="86" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#8b949e">elevador em Java</text>
-<rect x="66" y="98" width="40.4" height="17" rx="8.5" fill="#16281d" stroke="#245c34"/>
-<text x="86.2" y="110" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="9" fill="#7ee295" text-anchor="middle">Java</text>
-<text x="66" y="126" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="9.5" fill="#6e7681">★ 0  ·  atualizado há 1 ano</text>
-<circle cx="402" cy="44.5" r="3.5" fill="#b07219"/>
-<text x="412" y="48" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="9.5" fill="#8b949e">Java 100%</text>
-<circle cx="532" cy="66" r="22" fill="none" stroke="#1c2b22" stroke-width="6"/>
-<circle cx="532" cy="66" r="22" fill="none" stroke="#b07219" stroke-width="6" stroke-linecap="round" stroke-dasharray="138.2 138.2" transform="rotate(-90 532 66)"/>
-<text x="532" y="70" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="700" fill="#e6edf3" text-anchor="middle">100%</text>
 </g>
 </svg>
